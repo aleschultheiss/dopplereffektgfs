@@ -4,11 +4,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Der Dopplereffekt</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +17,81 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Custom Iframe from Assets page</h1>
+					<small>Alejandro Schultheiss</small>
+				</section>
+				<section>
+					<iframe width="760" height="515" src="https://www.youtube.com/embed/j3eRSljndVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</section>
+				<section>
+					<h4>Beobachtung:</h4>
+					<small>Anfangs hört sich die Sirene ganz Hell an und im weiteren Verlauf, nachdem der Krankenwagen am Beobachter vorbeigefahren ist, hört sich die Sirene viel tiefer an.</small>
+				</section>
+				<section>
+					<h4>Dopplereffekt</h4>
+					<p>Custom Iframe</p>
+				</section>
+				<section>
+					<h4>Gliederung</h4>
+				</section>
+				<section>
+					<div style="display: flex; width: 500px">
+						<img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcS3ubhS3hNvzPDnIK89tZVuWY-K8MXJpCTUYWTPVVwlV9vdWMDtZ8GwozVA7OFzKYJp"
+					</div>
+				</section>
+				<section>
+					<h4>Definition:</h4>
+
+				</section>
+				<section>
+					<div style="display: flex; width: 500px;">
+						<img src="media/quelle_ruhe_2.png"/>	
+						<img src="media/quelle_bewegt_2.png"/>	
+					</div>
+				</section>
+				<section>
+					<p class="codepen" data-height="600" data-default-tab="html,result" data-slug-hash="BjmxVr" data-user="wtfaremyinitials" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+						<span>See the Pen <a href="https://codepen.io/wtfaremyinitials/pen/BjmxVr">
+						Doppler Effect</a> (<a href="https://codepen.io/wtfaremyinitials">@wtfaremyinitials</a>)
+						on <a href="https://codepen.io">CodePen</a>.</span>
+					  </p>
+					  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+				</section>
+				<section>
+					<div>
+						<img src="media/Herleitung_one_1.png"/>
+						<img src="media/Herleitung_one_2.png" style="margin-top: -40px";/>
+					</div>
+				</section>
+				<section>
+					<img src="media/lambda.png"/>
+					<img src="media/eq_lambda.png"/>
+				</section>
+				<section>
+					<img src="media/Herleitung_one_3.png"/>
+				</section>
+				<section>
+					<img src="media/Herleitung_one_4.png"/>
+				</section>
+				<section>
+					<img src="media/quelle_ruhe.png" style="width: 60%;"/>
+				</section>
+				<section>
+					<img src="media/Herleitung_2_1.png"/>
+				</section>
+				<section>
+					<img src="media/Herleitung_2_2.png"/>
+				</section>
+				<section>
+					<img src="media/Herleitung_2_4.png"/>
+				</section>
+				<section>
+					<img src="media/Herleitung_2_5.png"/>
+				</section>
+				<section>
+					
+				</section>
 			</div>
 		</div>
 
@@ -25,6 +99,7 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -33,7 +108,8 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			
 			});
 		</script>
 	</body>
